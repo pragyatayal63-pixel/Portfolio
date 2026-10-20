@@ -199,6 +199,91 @@ export type Project = {
 };
 const projects: Project[] = [
   {
+    id: "spotify-netflix-replicas",
+    category: "Frontend Engineering",
+    title: "Spotify & Netflix Web Replicas",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: ["landing.png"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.js,
+      ],
+      backend: [],
+    },
+    live: "https://github.com/pragyatayal63-pixel",
+    github: "https://github.com/pragyatayal63-pixel",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            High-performance streaming frontends replicating Spotify & Netflix UI/UX.
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Built high-performance responsive streaming frontends with modular UI architecture, media carousels, and client state management — closely mirroring the design systems of Spotify and Netflix using React.js, JavaScript, CSS Grid, and REST APIs.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "jarvis-ai-assistant",
+    category: "AI / Automation",
+    title: "JARVIS — AI Voice Assistant",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: ["landing.png"],
+    skills: {
+      frontend: [],
+      backend: [
+        PROJECT_SKILLS.python,
+      ],
+    },
+    live: "https://github.com/pragyatayal63-pixel",
+    github: "https://github.com/pragyatayal63-pixel",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            Python voice assistant with speech-to-text and OS automation achieving 95% command accuracy.
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Developed a Python voice assistant leveraging speech-to-text engines and event-driven automation handlers executing complex system commands with 95% accuracy. Built on top of speech recognition libraries with modular command dispatch architecture.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "yieldsense-ai",
+    category: "AI / Machine Learning",
+    title: "YieldSense AI — Agricultural Yield Prediction",
+    src: "/assets/projects-screenshots/portfolio/landing.png",
+    screenshots: ["landing.png"],
+    skills: {
+      frontend: [],
+      backend: [
+        PROJECT_SKILLS.python,
+      ],
+    },
+    live: "https://github.com/pragyatayal63-pixel",
+    github: "https://github.com/pragyatayal63-pixel",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            Predictive AI system forecasting harvest yield using soil metrics, climate data, and crop statistics.
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Architected a predictive AI model evaluating soil metrics, historical climate, and crop statistics to forecast harvest yield using Scikit-Learn, Random Forest, and XGBoost. Fine-tuned regression algorithms and launched an interactive Flask web console for agronomists to optimize crop selection.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
     id: "psytrack",
     category: "AI Mental Health & Safety",
     title: "PsyTrack — AI Mental Health & Emergency Alert System",
